@@ -1,4 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+
+.story_title_2 {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.story_title_2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0px;
+}
+
+.story_inner {
+    justify-content: center;
+    display: flex;
+}
+
+.story_left {
+    margin-right: 50px;
+    max-width: 406px;
+}
+
+.story_title_3 {
+    color: rgba(72, 85, 91, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accent-color {
+    color: rgba(22, 172, 232, 1);
+}
+
+.story_text {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.story-right {
+    display: flex;
+    align-items: center;
+}
+
+.story-item {
+    background-repeat: no-repeat;
+    margin-right: 25px;
+    font-size: 24px;
+    padding: 15px;
+    width: 140px;
+    height: 224px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.story-item:nth-child(1) {
+
+    background-image: url(/img/1.png);
+}
+
+.story-item:nth-child(2) {
+    background-image: url(/img/2.png);
+}
+
+.story-item:nth-child(3) {
+    margin-right: 0px;
+    background-image: url(/img/3.png);
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:996px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .story_inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .story-right {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .story-item {
+        margin-bottom: 15px;
+    }
+
+    .story-item:nth-child(3) {
+        margin-right: 25px;
+    }
 }
