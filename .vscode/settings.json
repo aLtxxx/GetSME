@@ -1,8 +1,3 @@
 {
-    "githubPullRequests.remotes": [
-        "origin",
-        "upstream",
-        "GetSME"
-    ],
     "githubPullRequests.terminalLinksHandler": "github"
 }
